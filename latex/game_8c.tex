@@ -1,0 +1,110 @@
+\hypertarget{game_8c}{}\doxysection{game.\+c File Reference}
+\label{game_8c}\index{game.c@{game.c}}
+{\ttfamily \#include $<$ncurses.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}menu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}appearance.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}minunit.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{game_8c_a3ac3f9131675fceb8bfd24f2b848dcf7}{check\+Game}} (int y, int x, int diY, int diX)
+\item 
+int \mbox{\hyperlink{game_8c_aaf932373694b25ff1f4d138d2f586432}{compute\+Time}} (int delay\+Time)
+\item 
+void \mbox{\hyperlink{game_8c_ad0ff4d478a8e580ea1f2dd7eeaa3e4df}{showdinosaur}} (int diY, int diX)
+\item 
+int \mbox{\hyperlink{game_8c_a82d438a473fa7c538476588618253a4d}{compute\+Prize}} (int score, int used\+Prize)
+\item 
+void \mbox{\hyperlink{game_8c_aab880ed3265e5791bf993d298c3e86d6}{start\+Engine}} (int high\+Score, struct \mbox{\hyperlink{structuser}{user}} first\+User)
+\item 
+void \mbox{\hyperlink{game_8c_ae0c6e04a7b99ee25625edba38ee63f91}{all\+\_\+tests}} ()
+\item 
+int \mbox{\hyperlink{game_8c_ac25aec0309d9edc92fba6170d7eb2ff6}{run\+\_\+all\+\_\+tests}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{game_8c_a819b717d29c6c488a332fefeeb3815ba}{foo}} = 4
+\item 
+int \mbox{\hyperlink{game_8c_a2df8914184cddeed49ac0b633472d973}{bar}} = 5
+\item 
+int \mbox{\hyperlink{game_8c_a91aa4203331e915f2d20dd26579791ee}{tests\+\_\+run}} = 0
+\item 
+int \mbox{\hyperlink{game_8c_abf0c823d1963d8f0376e85f1b4973fb5}{tests\+\_\+passed}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{game_8c_ae0c6e04a7b99ee25625edba38ee63f91}\label{game_8c_ae0c6e04a7b99ee25625edba38ee63f91}} 
+\index{game.c@{game.c}!all\_tests@{all\_tests}}
+\index{all\_tests@{all\_tests}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{all\_tests()}{all\_tests()}}
+{\footnotesize\ttfamily void all\+\_\+tests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{game_8c_a3ac3f9131675fceb8bfd24f2b848dcf7}\label{game_8c_a3ac3f9131675fceb8bfd24f2b848dcf7}} 
+\index{game.c@{game.c}!checkGame@{checkGame}}
+\index{checkGame@{checkGame}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{checkGame()}{checkGame()}}
+{\footnotesize\ttfamily int check\+Game (\begin{DoxyParamCaption}\item[{int}]{y,  }\item[{int}]{x,  }\item[{int}]{diY,  }\item[{int}]{diX }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{game_8c_a82d438a473fa7c538476588618253a4d}\label{game_8c_a82d438a473fa7c538476588618253a4d}} 
+\index{game.c@{game.c}!computePrize@{computePrize}}
+\index{computePrize@{computePrize}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{computePrize()}{computePrize()}}
+{\footnotesize\ttfamily int compute\+Prize (\begin{DoxyParamCaption}\item[{int}]{score,  }\item[{int}]{used\+Prize }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{game_8c_aaf932373694b25ff1f4d138d2f586432}\label{game_8c_aaf932373694b25ff1f4d138d2f586432}} 
+\index{game.c@{game.c}!computeTime@{computeTime}}
+\index{computeTime@{computeTime}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{computeTime()}{computeTime()}}
+{\footnotesize\ttfamily int compute\+Time (\begin{DoxyParamCaption}\item[{int}]{delay\+Time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{game_8c_ac25aec0309d9edc92fba6170d7eb2ff6}\label{game_8c_ac25aec0309d9edc92fba6170d7eb2ff6}} 
+\index{game.c@{game.c}!run\_all\_tests@{run\_all\_tests}}
+\index{run\_all\_tests@{run\_all\_tests}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{run\_all\_tests()}{run\_all\_tests()}}
+{\footnotesize\ttfamily int run\+\_\+all\+\_\+tests (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{game_8c_ad0ff4d478a8e580ea1f2dd7eeaa3e4df}\label{game_8c_ad0ff4d478a8e580ea1f2dd7eeaa3e4df}} 
+\index{game.c@{game.c}!showdinosaur@{showdinosaur}}
+\index{showdinosaur@{showdinosaur}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{showdinosaur()}{showdinosaur()}}
+{\footnotesize\ttfamily void showdinosaur (\begin{DoxyParamCaption}\item[{int}]{diY,  }\item[{int}]{diX }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{game_8c_aab880ed3265e5791bf993d298c3e86d6}\label{game_8c_aab880ed3265e5791bf993d298c3e86d6}} 
+\index{game.c@{game.c}!startEngine@{startEngine}}
+\index{startEngine@{startEngine}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{startEngine()}{startEngine()}}
+{\footnotesize\ttfamily void start\+Engine (\begin{DoxyParamCaption}\item[{int}]{high\+Score,  }\item[{struct \mbox{\hyperlink{structuser}{user}}}]{first\+User }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{game_8c_a2df8914184cddeed49ac0b633472d973}\label{game_8c_a2df8914184cddeed49ac0b633472d973}} 
+\index{game.c@{game.c}!bar@{bar}}
+\index{bar@{bar}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{bar}{bar}}
+{\footnotesize\ttfamily int bar = 5}
+
+\mbox{\Hypertarget{game_8c_a819b717d29c6c488a332fefeeb3815ba}\label{game_8c_a819b717d29c6c488a332fefeeb3815ba}} 
+\index{game.c@{game.c}!foo@{foo}}
+\index{foo@{foo}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{foo}{foo}}
+{\footnotesize\ttfamily int foo = 4}
+
+\mbox{\Hypertarget{game_8c_abf0c823d1963d8f0376e85f1b4973fb5}\label{game_8c_abf0c823d1963d8f0376e85f1b4973fb5}} 
+\index{game.c@{game.c}!tests\_passed@{tests\_passed}}
+\index{tests\_passed@{tests\_passed}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{tests\_passed}{tests\_passed}}
+{\footnotesize\ttfamily int tests\+\_\+passed = 0}
+
+\mbox{\Hypertarget{game_8c_a91aa4203331e915f2d20dd26579791ee}\label{game_8c_a91aa4203331e915f2d20dd26579791ee}} 
+\index{game.c@{game.c}!tests\_run@{tests\_run}}
+\index{tests\_run@{tests\_run}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{tests\_run}{tests\_run}}
+{\footnotesize\ttfamily int tests\+\_\+run = 0}
+
